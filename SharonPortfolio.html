@@ -1,239 +1,114 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>YOUR NAME — Portfolio</title>
+    <title>Sharon Weisman — Cloud Operations Tech-Lead</title>
+    <meta name="description" content="Official personal page of Sharon Weisman, Cloud Operations Tech-Lead at Align Technologies." />
 
-    <!-- Bootstrap 5 -->
+    <!-- Bootstrap 5.3 CSS -->
     <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-            crossorigin="anonymous"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
 
     <style>
-        html { scroll-behavior: smooth; }
-        body { padding-top: 72px; }
-        .hero {
-            background: linear-gradient(180deg, #0d6efd 0%, #0a58ca 100%);
-            color: #fff;
-            border-bottom-left-radius: 2rem;
-            border-bottom-right-radius: 2rem;
-        }
-        .section-title { font-weight: 700; letter-spacing: 0.3px; }
-        .avatar {
-            width: 120px; height: 120px; border-radius: 50%;
-            object-fit: cover; border: 4px solid rgba(255,255,255,0.8);
-        }
-        .badge-skill { font-size: 0.9rem; }
-        .link-underline:hover { text-decoration: underline !important; }
-        footer { background: #0b1220; }
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.6;
+      }
+      header {
+        background: linear-gradient(180deg, #e8f0ff, white);
+        padding: 6rem 0 4rem;
+        text-align: center;
+      }
+      .avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: #0d6efd;
+        color: #fff;
+        font-weight: 700;
+        font-size: 2.25rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        box-shadow: 0 10px 25px rgba(13, 110, 253, 0.25);
+      }
+      section {
+        padding: 4rem 0;
+      }
+      footer {
+        background: #f8f9fa;
+        border-top: 1px solid #e9ecef;
+        text-align: center;
+        padding: 1.5rem 0;
+      }
     </style>
-</head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Sharon Weisman</a>
+      </div>
+    </nav>
 
-<!-- Navbar -->
-<nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
-    <div class="container">
-        <a class="navbar-brand fw-semibold" href="#home">YOUR NAME</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    <header>
+      <div class="container mt-5 pt-5">
+        <div class="avatar">SW</div>
+        <h1 class="fw-bold">Sharon Weisman</h1>
+        <p class="lead mb-3 text-primary">Cloud Operations Tech-Lead · Align Technologies</p>
+        <p class="text-secondary">Rehovot, Israel</p>
+      </div>
+    </header>
 
-<!-- Hero -->
-<header id="home" class="hero py-5">
-    <div class="container py-4">
-        <div class="row align-items-center g-4">
-            <div class="col-md-8">
-                <h1 class="display-5 fw-bold mb-3">Hi, I'm <span class="text-warning">YOUR NAME</span></h1>
-                <p class="lead mb-4"><!-- TODO: Replace with a 1–2 line professional tagline -->
-                    Cloud Monitoring Engineer & aspiring full‑stack developer. Passionate about automation, clean design, and reliable systems.
-                </p>
-                <div class="d-flex gap-2 flex-wrap">
-                    <a href="#projects" class="btn btn-light btn-lg"><i class="bi bi-rocket-takeoff"></i> View Projects</a>
-                    <a href="#contact" class="btn btn-outline-light btn-lg"><i class="bi bi-envelope"></i> Contact</a>
-                </div>
-            </div>
-            <div class="col-md-4 text-md-end text-center">
-                <!-- Optional placeholder avatar; replace src with your photo URL or remove -->
-                <img class="avatar" src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Portrait placeholder" />
-            </div>
-        </div>
-    </div>
-</header>
+    <section id="about">
+      <div class="container">
+        <h2 class="h3 mb-3">About Me</h2>
+        <p>
+          I'm a 28-year-old Cloud Operations Tech-Lead at <strong>Align Technologies</strong>, where I
+          specialize in ensuring high reliability and seamless performance across large-scale systems.
+        </p>
+        <p>
+          I live in <strong>Rehovot</strong> with my wife and our tailless cat, and I recently got married —
+          one of the happiest moments of my life.
+        </p>
+        <p>
+          Before my tech career, I proudly served in the <strong>Artillery Brigade</strong> of the Israel
+          Defense Forces, where I learned the value of teamwork, discipline, and resilience.
+        </p>
+      </div>
+    </section>
 
-<!-- About -->
-<section id="about" class="py-5">
-    <div class="container">
-        <h2 class="section-title h3 mb-4">About</h2>
-        <div class="row g-4">
-            <div class="col-lg-8">
-                <p class="mb-3">
-                    <!-- TODO: Replace with your professional summary (4–6 sentences). Keep it concise and factual. -->
-                    I’m a <strong>Cloud Monitor Engineer</strong> at <strong>Spot by Flexera</strong>, focused on observability, incident response, and automation. I enjoy building practical tools and clear documentation that help teams move faster and with confidence.
-                </p>
-                <ul class="mb-3">
-                    <li><strong>Location:</strong> Tel Aviv, Israel</li>
-                    <li><strong>Languages:</strong> Hebrew, English</li>
-                    <li><strong>Interests:</strong> CrossFit, Gymnastics, Hapoel Tel‑Aviv matches</li>
-                </ul>
-                <a class="link-underline" href="#contact">Need a quick intro? Jump to contact →</a>
-            </div>
-            <div class="col-lg-4">
-                <div class="p-4 rounded-3 border bg-light">
-                    <h3 class="h6 text-uppercase text-muted mb-3">Fast Facts</h3>
-                    <ul class="list-unstyled small mb-0">
-                        <li class="mb-2"><i class="bi bi-check2-circle me-2"></i> 24/7 monitoring & on‑call experience</li>
-                        <li class="mb-2"><i class="bi bi-check2-circle me-2"></i> Hands‑on with AWS, Terraform, Jenkins</li>
-                        <li class="mb-2"><i class="bi bi-check2-circle me-2"></i> Build bots and flows with M365 & SharePoint</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <section id="personal" class="bg-light">
+      <div class="container">
+        <h2 class="h3 mb-3">Personal Snapshot</h2>
+        <ul>
+          <li><strong>Age:</strong> 28</li>
+          <li><strong>Location:</strong> Rehovot, Israel</li>
+          <li><strong>Marital status:</strong> Married</li>
+          <li><strong>Pet:</strong> Tailless cat 🐾</li>
+          <li><strong>Military Service:</strong> Artillery Brigade</li>
+        </ul>
+      </div>
+    </section>
 
-<!-- Skills -->
-<section id="skills" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="section-title h3 mb-4">Skills</h2>
-        <div class="row g-4">
-            <div class="col-md-6">
-                <h3 class="h6 text-muted text-uppercase">Core</h3>
-                <div class="d-flex flex-wrap gap-2">
-                    <!-- TODO: Edit skills as needed -->
-                    <span class="badge text-bg-primary badge-skill">Linux</span>
-                    <span class="badge text-bg-primary badge-skill">AWS</span>
-                    <span class="badge text-bg-primary badge-skill">Docker</span>
-                    <span class="badge text-bg-primary badge-skill">Kubernetes</span>
-                    <span class="badge text-bg-primary badge-skill">Jenkins</span>
-                    <span class="badge text-bg-primary badge-skill">Terraform</span>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <h3 class="h6 text-muted text-uppercase">Monitoring & Data</h3>
-                <div class="d-flex flex-wrap gap-2">
-                    <span class="badge text-bg-secondary badge-skill">Datadog</span>
-                    <span class="badge text-bg-secondary badge-skill">Prometheus</span>
-                    <span class="badge text-bg-secondary badge-skill">Grafana</span>
-                    <span class="badge text-bg-secondary badge-skill">Splunk</span>
-                    <span class="badge text-bg-secondary badge-skill">OpenSearch</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <footer>
+      <div class="container small text-muted">
+        © <span id="year"></span> Sharon Weisman · Built with Bootstrap
+      </div>
+    </footer>
 
-<!-- Projects -->
-<section id="projects" class="py-5">
-    <div class="container">
-        <h2 class="section-title h3 mb-4">Projects</h2>
-        <div class="row g-4">
-            <!-- Card 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="h5 card-title">Incident Frequency Agent</h3>
-                        <p class="card-text small">Automation that aggregates incidents across Teams and SharePoint, highlights trends, and accelerates response.</p>
-                        <a class="stretched-link" href="#">Details</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="h5 card-title">KB Connected Agent</h3>
-                        <p class="card-text small">Agent that summarizes components and customer impact, linking to Confluence KB pages.</p>
-                        <a class="stretched-link" href="#">Details</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="h5 card-title">Monitoring Dashboards</h3>
-                        <p class="card-text small">Practical dashboards (Datadog / Grafana) with service health, latency, and error KPIs.</p>
-                        <a class="stretched-link" href="#">Details</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="section-title h3 mb-4">Contact</h2>
-        <div class="row g-4">
-            <div class="col-lg-6">
-                <div class="p-4 rounded-3 border bg-white h-100">
-                    <h3 class="h6 text-uppercase text-muted mb-3">Get in touch</h3>
-                    <p class="mb-3">Have a project in mind, or want to say hi? Reach out via email or LinkedIn.</p>
-                    <ul class="list-unstyled mb-0">
-                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-                        <li class="mb-2"><i class="bi bi-linkedin me-2"></i> <a href="#" target="_blank" rel="noopener">linkedin.com/in/your‑profile</a></li>
-                        <li class="mb-2"><i class="bi bi-github me-2"></i> <a href="#" target="_blank" rel="noopener">github.com/your‑handle</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <form class="p-4 rounded-3 border bg-white">
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your name" />
-                        </div>
-                        <div class="col-md-6">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com" />
-                        </div>
-                        <div class="col-12">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="How can I help?"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <button type="button" class="btn btn-primary">Send</button>
-                            <span class="text-muted small ms-2">(demo form — wire up later)</span>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="py-4 text-white">
-    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
-        <div class="small">© <span id="year"></span> YOUR NAME</div>
-        <div class="small"><i class="bi bi-geo-alt me-1"></i> Tel Aviv, Israel</div>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script>
-    // Set current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
